@@ -1,0 +1,13 @@
+<div class="projects-section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of projects">
+      <h3>{{ project.title }}</h3>
+      <p class="description">{{ project.description }}</p>
+      <p class="tech">
+        <strong>Technologies:</strong> {{ project.technologies.join(', ') }}
+      </p>
+      <!-- <a [href]="project.link" target="_blank" class="project-link">View Project</a> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+.projects-section {
+  padding: 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .project-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tech {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    // .project-link {
+    //   display: inline-block;
+    //   color: white;
+    //   background-color: #007bff;
+    //   padding: 0.4rem 0.8rem;
+    //   border-radius: 5px;
+    //   text-decoration: none;
+    //   transition: background-color 0.2s;
+
+    //   &:hover {
+    //     background-color: #0056b3;
+    //   }
+    // }
+  }
+}

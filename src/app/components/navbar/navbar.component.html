@@ -1,0 +1,18 @@
+<nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo">MyPortfolio</div>
+      <button class="menu-toggle" (click)="toggleMobileMenu()">
+        ☰
+      </button>
+  
+      <ul class="nav-links" [class.mobile-open]="isMobileMenuOpen">
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMenuOnNavigate()">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenuOnNavigate()">About</a></li>
+        <li><a routerLink="/skills" routerLinkActive="active" (click)="closeMenuOnNavigate()">Skills</a></li>
+        <li><a routerLink="/projects" routerLinkActive="active" (click)="closeMenuOnNavigate()">Projects</a></li>
+        <li><a routerLink="/experience" routerLinkActive="active" (click)="closeMenuOnNavigate()">Experience</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenuOnNavigate()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  

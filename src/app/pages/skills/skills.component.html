@@ -1,0 +1,28 @@
+
+
+<!-- display-1 -->
+<!-- <div class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of skills">
+        <p class="skill-name">{{ skill.name }}</p>
+        <p class="skill-level">{{ skill.level }}</p>
+      </div>
+    </div>
+  </div> -->  
+<!-- display-2 -->
+  <div class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of skills">
+        <p class="skill-name">{{ skill.name }}</p>
+        <div class="stars">
+          <ng-container *ngFor="let star of stars; let i = index">
+            <span [class.filled]="i < skill.level">&#9733;</span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
